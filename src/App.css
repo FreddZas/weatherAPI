@@ -1,42 +1,82 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather__header {
+  border-radius: 16px;
+  padding: 10px;
+  background-color: lightblue;
+  color:grey;
+  transition: .3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.weather__header:hover{
+    background-color:gray;
+    color: lightblue;
 }
 
-.card {
-  padding: 2em;
+.weather__title {
 }
 
-.read-the-docs {
-  color: #888;
+.weather__body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weather__info {
+  background-color: lightskyblue;
+  color:grey;
+  border-radius: 16px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: .3s;
+}
+
+
+.weather__info:hover{
+    background-color:white;
+    color: lightskyblue;
+    transform:translate(0px, -3px);
+    
+}
+
+.weather__img-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.weather__list > li > span {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.weather__btn{
+
+    border: none;
+    background-color: lightseagreen
+
+}
+.weather__btn:hover {
+    background-color:white;
+    color: lightseagreen;
 }

@@ -12,6 +12,7 @@ function App() {
   const [temp, setTemp] = useState();
   const [error, setError] = useState(null);
 
+  
   useEffect(() => {
     const success = (pos) => {
       const obj = {
@@ -60,7 +61,10 @@ function App() {
         weather 
         ? 
         (
-          <WeatherCard weather={weather} temp={temp} />
+          <WeatherCard 
+            weather={weather} 
+            temp={temp} 
+          />
         ) 
         : 
         (
