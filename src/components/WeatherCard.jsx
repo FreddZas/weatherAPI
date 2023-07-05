@@ -12,9 +12,8 @@ const WeatherCard = ({ weather, temp }) => {
   return (
     <article className="weather">
       <header className="weather__header">
-        <h1 className="weather__title">{weather?.name}</h1>
+        <h1 className="weather__title">{weather?.name}, {weather?.sys.country}</h1>
         <h2 className="weather__subtitle">
-          {weather?.sys.country}
         </h2>
       </header>
 
@@ -24,32 +23,31 @@ const WeatherCard = ({ weather, temp }) => {
             src={
               weather &&
               `https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`
-            }
-            alt=""
+            } alt=""
           />
         </div>
 
         <div className="weather__info">
           <h3 className="weather__info-title">
-            "{weather?.weather[0].description}"
+            {weather?.weather[0].description}
           </h3>
           <ul className="weather__list">
             <li className="weather__list-item">
-              <span className="weather__list-label">Wind Speed</span>
+              <span className="weather__list-label">WIND</span>
               <span className="weather__list-value">
-                {weather?.wind.speed}m/s
+                {weather?.wind.speed} m/s
               </span>
             </li>
             <li className="weather__list-item">
-              <span className="weather__list-label">Clouds</span>
+              <span className="weather__list-label">CLOUDS</span>
               <span className="weather__list-value">
-                {weather?.clouds.all}%
+                {weather?.clouds.all} %
               </span>
             </li>
             <li className="weather__list-item">
-              <span className="weather__list-label">Pressures</span>
+              <span className="weather__list-label">PRESSURE</span>
               <span className="weather__list-value">
-                {weather?.main.pressure}hPa
+                {weather?.main.pressure} hPa
               </span>
             </li>
           </ul>
@@ -57,10 +55,10 @@ const WeatherCard = ({ weather, temp }) => {
       </section>
       <footer className="weather__footer">
         <h2 className="weather__temp">
-          {isCelsius ? `${temp?.celsius} °C` : `${temp?.farenheit} °F`}
+          {isCelsius ? `${temp?.celsius}°` : `${temp?.farenheit}°`}
         </h2>
         <button className="weather__btn" onClick={handleChangeTemp}>
-          {isCelsius ? "Farenheit°" : "Celsius°"}
+          {isCelsius ? "Cambiar a F°" : "Cambiar a C°"}
         </button>
       </footer>
     </article>

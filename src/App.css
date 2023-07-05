@@ -10,84 +10,11 @@ body {
   margin: 0;
 }
 
-.weather {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.weather__header {
-  border-radius: 16px;
-  padding: 10px;
-  background-color: lightblue;
-  color:grey;
-  transition: .3s;
-}
-
-.weather__header:hover{
-    background-color:gray;
-    color: lightblue;
-}
-
-.weather__title {
-  font-weight: bold;
-}
-
-.weather__body {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: dashed
-}
-
-.weather__info {
-  
-  color:rgb(81, 83, 189);
-  border-radius: 16px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  transition: .3s;
-  transform: translate(-180px);
-}
 
 
-.weather__info:hover{
-    background-color:rgb(152, 186, 233);
-    color: rgb(9, 2, 88);
-    transform:translate(-180px, -5px);
-
-}
-
-.weather__img-container {
-  
-  transform: translate(220px, -100px);
-  width: 80%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  transition: .3s;
-}
-
-.weather__img-container:hover{
-  transform:translate(220px, -105px);
-}
-
-.weather__list > li > span {
-  font-weight: bold;
-  font-size: 20px;
-}
 
 
-.weather__btn{
 
-    border: none;
-    background-color: lightseagreen
 
-}
-.weather__btn:hover {
-    background-color:white;
-    color: lightseagreen;
-}
+
+
