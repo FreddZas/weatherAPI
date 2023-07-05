@@ -1,10 +1,10 @@
 .weather{
     background-color: rgba(252, 252, 252, 0.527);
     padding: 2.5em 2em 3.5em;
-    border-radius: 30px 200px 30px 30px;
+    border-radius: 30px 220px 30px 30px;
     width: 100%;
     height: 250px;
-    max-width: 400px;
+    max-width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,17 +35,18 @@
 }
 
 .weather__img-container {
-    
-    transform: translate(220px, -100px);
+    align-items: center;
+    transform: translate(180px, -100px);
     width: 80%;
     height: 100%;
     display: flex;
     justify-content: center;
     transition: .3s;
+    display: flex;
 }
 
 .weather__img-container:hover{
-    transform:translate(220px, -105px);
+    transform:translate(180px, -105px);
        
 }
 
@@ -71,13 +72,16 @@
     width: 80px;
     height: 180px;
     text-align: right;
-    transform: translate(240px, 110px);
+    transform: translate(220px, 110px);
     font-weight: bold;
     font-size: 14px;
     transition: .3s;
+    display: flex;
+    align-items: center;
+    position: inherit;
  }
 .weather__info:hover > h3{
-  transform:translate(240px, 105px);
+  transform:translate(220px, 105px);
 }
 
 .weather__list{
