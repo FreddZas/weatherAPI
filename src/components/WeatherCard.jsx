@@ -13,8 +13,6 @@ const WeatherCard = ({ weather, temp }) => {
     <article className="weather">
       <header className="weather__header">
         <h1 className="weather__title">{weather?.name}, {weather?.sys.country}</h1>
-        <h2 className="weather__subtitle">
-        </h2>
       </header>
 
       <section className="weather__body">
